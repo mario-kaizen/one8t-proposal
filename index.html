@@ -31,7 +31,7 @@ nav a.on{background:var(--ink);color:var(--ivory);}
 nav a.on .n{color:var(--sage-soft);}
 .navfoot{margin-top:auto;font-size:10px;color:var(--muted);line-height:1.6;}
 main{margin-left:225px;flex:1;min-width:0;}
-section{padding:62px 7.5% 46px;max-width:1080px;}
+section{padding:62px clamp(26px,6vw,90px) 46px;max-width:1160px;margin:0 auto;}
 @media (max-width:940px){
   nav{position:static;width:100%;flex-direction:row;flex-wrap:wrap;padding:14px;border-right:0;border-bottom:1px solid var(--line);}
   .navbrand{width:100%;margin-bottom:6px;}
@@ -102,7 +102,7 @@ svg text{font-family:'Montserrat',Helvetica,Arial,sans-serif;}
 .sig{margin-top:26px;}
 .sig .name{font-weight:800;font-size:16px;}
 .sig .role{font-size:12px;color:var(--muted);}
-footer{padding:28px 7.5% 54px;font-size:11px;color:var(--muted);max-width:1080px;line-height:1.65;}
+footer{padding:28px clamp(26px,6vw,90px) 54px;font-size:11px;color:var(--muted);max-width:1160px;margin:0 auto;line-height:1.65;}
 .hr{border:0;border-top:1px solid var(--line);margin:0 0 14px;}
 @media print{nav{display:none;}main{margin-left:0;}}
 </style>
