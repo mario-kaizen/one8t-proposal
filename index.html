@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ONE8T Wellness | Growth System Proposal | Kaizen Collective</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --ivory:#f6f2ef; --card:#ffffff; --ink:#2b2626; --taupe:#645452; --muted:#8a7671;
+  --sage:#4f6151; --sage-soft:#a8b2a1; --clay:#b9a99f;
+  --line:rgba(43,38,38,.14);
+  --shadow:0 1px 2px rgba(43,38,38,.05), 0 8px 28px rgba(43,38,38,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Montserrat',Helvetica,Arial,sans-serif;background:var(--ivory);color:var(--ink);font-size:15px;line-height:1.68;-webkit-font-smoothing:antialiased;}
+
+.wrap{display:flex;min-height:100vh;}
+nav{width:225px;flex:0 0 225px;position:fixed;top:0;left:0;bottom:0;background:#efe9e4;border-right:1px solid var(--line);padding:30px 20px;display:flex;flex-direction:column;gap:3px;z-index:10;}
+.navbrand{margin-bottom:22px;}
+.navbrand .one8t{font-weight:800;font-size:18px;letter-spacing:.16em;}
+.navbrand .one8t span{color:var(--sage);}
+.navbrand .x{display:block;font-size:9.5px;letter-spacing:.26em;color:var(--muted);margin-top:5px;text-transform:uppercase;}
+nav a{display:block;text-decoration:none;color:var(--taupe);font-size:12px;font-weight:600;letter-spacing:.03em;padding:7px 9px;border-radius:7px;}
+nav a .n{display:inline-block;width:24px;color:var(--muted);font-weight:700;font-size:10.5px;}
+nav a:hover{background:rgba(43,38,38,.05);color:var(--ink);}
+nav a.on{background:var(--ink);color:var(--ivory);}
+nav a.on .n{color:var(--sage-soft);}
+.navfoot{margin-top:auto;font-size:10px;color:var(--muted);line-height:1.6;}
+main{margin-left:225px;flex:1;min-width:0;}
+section{padding:62px 7.5% 46px;max-width:1080px;}
+@media (max-width:940px){
+  nav{position:static;width:100%;flex-direction:row;flex-wrap:wrap;padding:14px;border-right:0;border-bottom:1px solid var(--line);}
+  .navbrand{width:100%;margin-bottom:6px;}
+  .navfoot{display:none;}
+  nav a{font-size:10.5px;padding:5px 7px;}
+  nav a .n{width:auto;margin-right:3px;}
+  .wrap{display:block;} main{margin-left:0;} section{padding:42px 5.5% 34px;}
+}
+
+.kicker{font-size:10.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:12px;}
+h1{font-size:clamp(26px,3.4vw,36px);font-weight:800;line-height:1.18;margin-bottom:16px;letter-spacing:-0.01em;}
+h2{font-size:clamp(21px,2.6vw,27px);font-weight:800;line-height:1.22;margin-bottom:12px;letter-spacing:-0.008em;}
+h3{font-size:16.5px;font-weight:700;margin:24px 0 8px;}
+p{margin-bottom:12px;max-width:72ch;}
+.lead{font-size:16px;color:var(--taupe);max-width:70ch;}
+strong{font-weight:700;}
+.small{font-size:12px;color:var(--muted);line-height:1.6;}
+
+.quote{border-left:3px solid var(--sage);background:var(--card);padding:16px 20px;margin:18px 0;border-radius:0 10px 10px 0;box-shadow:var(--shadow);max-width:74ch;}
+.quote p{font-size:15.5px;font-weight:500;font-style:italic;margin-bottom:6px;}
+.quote .who{font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-style:normal;}
+
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:18px 0;font-size:13px;}
+th{background:var(--ink);color:var(--ivory);text-align:left;padding:10px 13px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;}
+td{padding:11px 13px;border-top:1px solid var(--line);vertical-align:top;}
+td b{font-weight:700;}
+.tblwrap{overflow-x:auto;}
+
+.finding{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px;box-shadow:var(--shadow);margin:14px 0;max-width:100%;}
+.finding .fn{font-size:10.5px;font-weight:800;letter-spacing:.14em;color:var(--sage);text-transform:uppercase;}
+.finding h4{font-size:15.5px;font-weight:700;margin:4px 0 6px;}
+.finding p{font-size:13.5px;margin-bottom:6px;max-width:none;}
+.finding .fix{font-size:12px;color:var(--muted);font-weight:600;}
+
+.diagram{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow);margin:22px 0;}
+.diagram .t{font-size:12.5px;font-weight:700;letter-spacing:.04em;margin-bottom:2px;}
+.diagram .s{font-size:11.5px;color:var(--muted);margin-bottom:12px;}
+svg{width:100%;height:auto;display:block;}
+svg text{font-family:'Montserrat',Helvetica,Arial,sans-serif;}
+.dbox{fill:#f6f2ef;stroke:#645452;stroke-width:1.4;rx:8;}
+.dboxsage{fill:#4f6151;stroke:none;}
+.dboxink{fill:#2b2626;stroke:none;}
+.dboxwarn{fill:#fff;stroke:#b9a99f;stroke-width:1.4;stroke-dasharray:5 4;}
+.dt{font-size:12px;font-weight:700;fill:#2b2626;}
+.dts{font-size:10px;font-weight:500;fill:#645452;}
+.dtw{font-size:12px;font-weight:700;fill:#f6f2ef;}
+.dtws{font-size:10px;font-weight:500;fill:#d9cfc9;}
+.darrow{stroke:#645452;stroke-width:1.6;fill:none;marker-end:url(#ah);}
+.darrowsage{stroke:#4f6151;stroke-width:2;fill:none;marker-end:url(#ahs);}
+.darrowbad{stroke:#b9a99f;stroke-width:1.6;stroke-dasharray:5 4;fill:none;}
+.dnote{font-size:10px;font-weight:600;fill:#8a7671;}
+.dnotebad{font-size:10.5px;font-weight:700;fill:#a2604f;}
+.dnotesage{font-size:10.5px;font-weight:700;fill:#4f6151;}
+
+.phase{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 30px;box-shadow:var(--shadow);margin:24px 0;}
+.phase .ph{font-size:10.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);margin-bottom:6px;}
+.phase h3{font-size:19px;margin:0 0 10px;}
+.phase ol,.phase ul{margin:8px 0 10px 20px;max-width:74ch;}
+.phase li{margin-bottom:8px;font-size:14px;}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);margin:20px 0;}
+.chart .t{font-size:12.5px;font-weight:700;margin-bottom:2px;}
+.chart .s{font-size:11.5px;color:var(--muted);margin-bottom:10px;}
+.defs{background:#efe9e4;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:12.5px;color:var(--taupe);max-width:78ch;}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0;}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 15px 11px;box-shadow:var(--shadow);}
+.stat .v{font-size:23px;font-weight:800;letter-spacing:-0.02em;line-height:1.1;}
+.stat .l{font-size:10.5px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:5px;line-height:1.45;}
+.sig{margin-top:26px;}
+.sig .name{font-weight:800;font-size:16px;}
+.sig .role{font-size:12px;color:var(--muted);}
+footer{padding:28px 7.5% 54px;font-size:11px;color:var(--muted);max-width:1080px;line-height:1.65;}
+.hr{border:0;border-top:1px solid var(--line);margin:0 0 14px;}
+@media print{nav{display:none;}main{margin-left:0;}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute;">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#645452"/></marker>
+    <marker id="ahs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f6151"/></marker>
+  </defs>
+</svg>
+<div class="wrap">
+
+<nav id="nav">
+  <div class="navbrand">
+    <div class="one8t">ONE<span>8</span>T</div>
+    <span class="x">x Kaizen Collective</span>
+  </div>
+  <a href="#intro"><span class="n">01</span>Introduction</a>
+  <a href="#problem"><span class="n">02</span>The Problem</a>
+  <a href="#process"><span class="n">03</span>The Process</a>
+  <a href="#breakdown"><span class="n">04</span>The Breakdown</a>
+  <a href="#bench"><span class="n">05</span>Benchmarks</a>
+  <a href="#invest"><span class="n">06</span>Investment</a>
+  <a href="#own"><span class="n">07</span>Ownership</a>
+  <a href="#next"><span class="n">08</span>Next Step</a>
+  <div class="navfoot">Private document.<br>Prepared for Skye Kaiss,<br>ONE8T Wellness, Calgary.<br><br>Kaizen Collective<br>14 July 2026</div>
+</nav>
+
+<main>
+
+<!-- ============ 01 INTRODUCTION ============ -->
+<section id="intro">
+  <div class="kicker">01 | Introduction</div>
+  <h1>ONE8T Wellness | Growth System Proposal</h1>
+  <p class="lead">Prepared for Skye Kaiss by Mario Paguio, Kaizen Collective. 14 July 2026.</p>
+  <p>Six months after opening, Marda Loop carries 690 active paying clients and $396,624 of net revenue, and its fastest daily pace is happening right now, this month. West Springs is in presale behind it. The plan is four Calgary locations, then franchises across Canada.</p>
+  <p>This document is the operating system for that plan. The problems you raised on our call are real, and every one is answered in here, including the one you tested me with. But a business built to franchise does not need four repairs. It needs every stage of the member journey, first ad to year two, running on machinery a new location inherits on day one. That is what we operate across STRONG Pilates' 150 studios, and this document fits it to ONE8T.</p>
+  <p>Before writing it, I read your systems with the access you granted: both Grow accounts (46 automations, 69 triggers, 46 email templates), both Meta ad accounts (337 ads), Marda Loop's complete member and payment history from Core, and the full training log of your current AI (85 corrections since January). Every number in here comes from those reads, taken 13 and 14 July 2026. Where a number needs a definition to be trusted, the definition is printed beside it.</p>
+  <p>How to read it: section 02 is what the reads found, including the conversion number Hapana overstates by three times. Section 03 is the system and the timeline. Section 04 is the build, down to the field names. Section 05 is our Canada portfolio, counting definitions attached. Section 06 is the price, written so it can be handed to a franchisee. Section 07 is what you own.</p>
+
+  <h3>The plan at a glance</h3>
+  <div class="tblwrap">
+  <table>
+    <tr><th>Phase</th><th>What it delivers</th><th>Live</th></tr>
+    <tr><td><b>1. The Core to Grow bridge</b></td><td>Session times flow into Grow. Timed confirmations and reminders. The book and pay flow without an account wall.</td><td>Bridge week 2. Booking flow week 3 to 4.</td></tr>
+    <tr><td><b>2. The AI host</b></td><td>One agent for the brand, connected to your real schedule and inbox, corrected by your team same day.</td><td>Side by side week 3. Cutover on your word.</td></tr>
+    <tr><td><b>3. The lifecycle library</b></td><td>The journeys between first visit and year two: the intro decision arc, member onboarding, milestones, absence recovery, pack expiry, payment recovery, saves and winback, campaigns.</td><td>First tranche week 2. Full library by week 6.</td></tr>
+    <tr><td><b>4. The growth engine</b></td><td>Ads, creatives and landing pages run as one journey with true exclusions, reported on one dashboard.</td><td>Restructure from week 1.</td></tr>
+    <tr><td><b>5. The template</b></td><td>Everything above packaged so location 3 to 100 switches it on instead of rebuilding it.</td><td>Hardens as 1 to 4 ship.</td></tr>
+  </table>
+  </div>
+  <p><strong>Investment:</strong> $5,000 AUD once for the template build, then per studio either $400 AUD a week (full service) or $200 AUD a month (Grow and AI only). CAD context and full scope in section 06.</p>
+</section>
+
+<!-- ============ 02 THE PROBLEM ============ -->
+<section id="problem">
+  <div class="kicker">02 | The Problem</div>
+  <h2>What you want, and why the current stack can't deliver it.</h2>
+
+  <h3>A. The asks the platform can't meet</h3>
+  <div class="tblwrap">
+  <table>
+    <tr><th>You want</th><th>The stack today</th><th>Consequence</th></tr>
+    <tr><td>Reminders that say the session time</td><td>Core never pushes booking time to Grow. 0 of your 46 automations can reference it. Your own confirmation SMS reads "arrive 30 mins before your scheduled session time" with no time in it.</td><td>Every message is generic. The 98% show rate depends on people checking the app.</td></tr>
+    <tr><td>Book and pay in one pass, no account</td><td>Core's simple signup covers purchases only. Booking still requires an account and password.</td><td>The midnight lead hits a wall at the exact moment they were ready.</td></tr>
+    <tr><td>Correct your AI the same day</td><td>All 85 corrections filed since January were applied manually by the vendor's team. Their interface says so on every ticket.</td><td>Errors live for days. One logged incident: "Agent fabricated membership package details."</td></tr>
+    <tr><td>One brain for the brand</td><td>Two agents trained separately. One knowledge base is empty; everything it knows arrived through correction tickets.</td><td>You teach everything twice. Location 3 would mean a third student.</td></tr>
+    <tr><td>AI that books off the real schedule</td><td>The AI has no connection to Core or Grow. Its integrations page shows every CRM as NOT CONNECTED.</td><td>It can only send links. 5.3% of its conversations end in a tracked goal.</td></tr>
+    <tr><td>One accountable partner</td><td>Three vendors. None owns the journey end to end.</td><td>The problems live in the gaps between them, and the gaps belong to nobody.</td></tr>
+  </table>
+  </div>
+
+  <div class="diagram">
+    <div class="t">The system today</div>
+    <div class="s">Four tools, three vendors. The two links that matter most do not exist.</div>
+    <svg viewBox="0 0 760 300" role="img" aria-label="Current system diagram">
+      <rect class="dbox" x="20" y="30" width="160" height="64" rx="8"/>
+      <text class="dt" x="100" y="57" text-anchor="middle">Meta Ads</text>
+      <text class="dts" x="100" y="74" text-anchor="middle">agency managed, 337 ads</text>
+      <rect class="dbox" x="20" y="180" width="160" height="64" rx="8"/>
+      <text class="dt" x="100" y="207" text-anchor="middle">Landing pages</text>
+      <text class="dts" x="100" y="224" text-anchor="middle">book = create an account</text>
+      <rect class="dbox" x="300" y="30" width="160" height="64" rx="8"/>
+      <text class="dt" x="380" y="57" text-anchor="middle">Hapana Core</text>
+      <text class="dts" x="380" y="74" text-anchor="middle">bookings, members, payments</text>
+      <rect class="dbox" x="300" y="180" width="160" height="64" rx="8"/>
+      <text class="dt" x="380" y="207" text-anchor="middle">Grow CRM</text>
+      <text class="dts" x="380" y="224" text-anchor="middle">46 automations, blind to time</text>
+      <rect class="dboxwarn" x="580" y="105" width="160" height="64" rx="8"/>
+      <text class="dt" x="660" y="132" text-anchor="middle">HireBob AI</text>
+      <text class="dts" x="660" y="149" text-anchor="middle">no CRM connection</text>
+      <path class="darrow" d="M100,94 L100,180"/>
+      <path class="darrow" d="M180,212 L296,212"/>
+      <path class="darrow" d="M380,94 L380,176"/>
+      <text class="dnotebad" x="392" y="140">sync drops the session time</text>
+      <path class="darrowbad" d="M460,212 L580,160"/>
+      <text class="dnotebad" x="472" y="238">summaries only, one way</text>
+      <line x1="618" y1="70" x2="662" y2="102" stroke="#a2604f" stroke-width="1.6"/>
+      <line x1="662" y1="70" x2="618" y2="102" stroke="#a2604f" stroke-width="1.6"/>
+      <text class="dnotebad" x="560" y="60" text-anchor="middle">no schedule access</text>
+      <text class="dnote" x="20" y="285">Dashed = disconnected or one way. The AI cannot see a booking. Grow cannot see a time.</text>
+    </svg>
+  </div>
+
+  <h3>B. What the accounts show</h3>
+  <p class="lead">Six findings from the read, in order of what they cost you.</p>
+
+  <div class="finding">
+    <div class="fn">Finding 1 | Conversion</div>
+    <h4>True intro to membership conversion is roughly 11%, not the 33.5% your reporting implies.</h4>
+    <p>1,357 people have bought an intro. Hapana's built in conversion field marks 33.5% converted, but it counts any later purchase (session packs, PLUS ONE add ons, even comps) as a conversion. Rebuilt from actual product names, two independent methods land at 10.9% and 11.7%. The matured cohort (intros older than 90 days) runs 12 to 14%.</p>
+    <p class="fix">Addressed by Phases 1 to 4 together: this number is the whole lifecycle, not one fix. Benchmarks in section 05 run 31.8% to 41.7%.</p>
+  </div>
+  <div class="finding">
+    <div class="fn">Finding 2 | Cost per lead</div>
+    <h4>Your cost per lead has doubled against the account's own baseline.</h4>
+    <p>Lifetime: $15.08 across 2,429 leads. Last 30 days: $32.77 (84 leads on $2,753). Structural causes are visible in the account: 183 ads spread across 35 ad sets, audience frequency at 2.15, and a lead exclusion list holding roughly 20 people, so paid impressions keep reaching people who already converted.</p>
+    <p class="fix">Addressed by Phase 4. Same window benchmarks in section 05.</p>
+  </div>
+  <div class="finding">
+    <div class="fn">Finding 3 | The AI</div>
+    <h4>The AI is a sealed unit you rent, not a system you run.</h4>
+    <p>85 corrections since January, every one applied manually by the vendor. No connection to your CRM or booking data. In its own insights, 5.3% of conversations end in a tracked goal. In the sampled threads, three separate leads told it to stop messaging them, a side effect of its email plus SMS double touch default.</p>
+    <p class="fix">Addressed by Phase 2. Its genuine strengths (3.4 second responses, polite decline handling) carry over; its accumulated rules import as the day one rulebook.</p>
+  </div>
+  <div class="finding">
+    <div class="fn">Finding 4 | Post purchase</div>
+    <h4>There is no engine after the sale.</h4>
+    <p>No closeout automation (you send mass texts by hand), no structured retention arc after a purchase, no winback. 195 genuine cancellations are logged; a reason was captured for 82% of them, which is a usable base nobody is using.</p>
+    <p class="fix">Addressed by Phases 1 + 3: the lifecycle library exists precisely for this, and it becomes possible once the bridge feeds Grow attendance and time.</p>
+  </div>
+  <div class="finding">
+    <div class="fn">Finding 5 | Revenue</div>
+    <h4>The underlying business is compounding. The layers above it leak.</h4>
+    <p>$396,624 net revenue since opening. May was the biggest full month at $74,515. July is running $2,603 a day over its first 13 days, the fastest pace yet. Demand is not the problem; capture is.</p>
+  </div>
+  <div class="finding">
+    <div class="fn">Finding 6 | Repeatability</div>
+    <h4>Nothing is templated for location 3.</h4>
+    <p>Every system above was hand built for one location at a time. On the current stack, your third opening starts from zero, with the same three vendors and the same gaps.</p>
+    <p class="fix">Addressed by Phase 5.</p>
+  </div>
+
+  <div class="chart">
+    <div class="t">Marda Loop net revenue by month, CAD</div>
+    <div class="s">From your Core payment records, net of refunds. July shows its first 13 days; its daily pace ($2,603/day) is the best of any month so far.</div>
+    <svg viewBox="0 0 560 224" role="img" aria-label="Monthly net revenue chart">
+      <line x1="30" y1="190" x2="545" y2="190" stroke="rgba(43,38,38,.25)" stroke-width="1"/>
+      <rect x="40"  y="100.2" width="52" height="89.8"  fill="#4f6151"/>
+      <rect x="112" y="84.1"  width="52" height="105.9" fill="#4f6151"/>
+      <rect x="184" y="68.2"  width="52" height="121.8" fill="#4f6151"/>
+      <rect x="256" y="60.6"  width="52" height="129.4" fill="#4f6151"/>
+      <rect x="328" y="41"    width="52" height="149"   fill="#4f6151"/>
+      <rect x="400" y="63.6"  width="52" height="126.4" fill="#4f6151"/>
+      <rect x="472" y="122.3" width="52" height="67.7"  fill="#4f6151" opacity="0.45"/>
+      <text x="66"  y="94"  text-anchor="middle" font-size="10.5" font-weight="700" fill="#2b2626">$44.9k</text>
+      <text x="138" y="78"  text-anchor="middle" font-size="10.5" font-weight="700" fill="#2b2626">$52.9k</text>
+      <text x="210" y="62"  text-anchor="middle" font-size="10.5" font-weight="700" fill="#2b2626">$60.9k</text>
+      <text x="282" y="54.6" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2b2626">$64.7k</text>
+      <text x="354" y="35"  text-anchor="middle" font-size="10.5" font-weight="700" fill="#2b2626">$74.5k</text>
+      <text x="426" y="57.6" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2b2626">$63.2k</text>
+      <text x="498" y="116.3" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8a7671">$33.8k</text>
+      <text x="66"  y="206" text-anchor="middle" font-size="11" fill="#645452">Jan</text>
+      <text x="138" y="206" text-anchor="middle" font-size="11" fill="#645452">Feb</text>
+      <text x="210" y="206" text-anchor="middle" font-size="11" fill="#645452">Mar</text>
+      <text x="282" y="206" text-anchor="middle" font-size="11" fill="#645452">Apr</text>
+      <text x="354" y="206" text-anchor="middle" font-size="11" fill="#645452">May</text>
+      <text x="426" y="206" text-anchor="middle" font-size="11" fill="#645452">Jun</text>
+      <text x="498" y="206" text-anchor="middle" font-size="11" fill="#645452">Jul*</text>
+      <text x="498" y="220" text-anchor="middle" font-size="9.5" fill="#8a7671">*13 days</text>
+    </svg>
+  </div>
+
+  <h3>C. The whole map</h3>
+  <p>The asks from our call live in the first half of the member lifecycle. The second half is where compounding revenue lives, and today it is empty. This is the difference between fixing complaints and installing the operating system.</p>
+  <div class="diagram">
+    <div class="t">The member lifecycle, mapped against your accounts</div>
+    <div class="s">Top: the stage. Middle: what runs at Marda Loop today. Bottom: what the system runs at every location.</div>
+    <svg viewBox="0 0 760 208" role="img" aria-label="Lifecycle map">
+      <text class="dt" x="59"  y="16" text-anchor="middle" font-size="11">Attract</text>
+      <text class="dt" x="152" y="16" text-anchor="middle" font-size="11">Book</text>
+      <text class="dt" x="245" y="16" text-anchor="middle" font-size="11">Show up</text>
+      <text class="dt" x="338" y="16" text-anchor="middle" font-size="11">Decide</text>
+      <text class="dt" x="431" y="16" text-anchor="middle" font-size="11">Onboard</text>
+      <text class="dt" x="524" y="16" text-anchor="middle" font-size="11">Attend</text>
+      <text class="dt" x="617" y="16" text-anchor="middle" font-size="11">Renew</text>
+      <text class="dt" x="710" y="16" text-anchor="middle" font-size="11">Recover</text>
+      <rect x="15"  y="26" width="88" height="44" rx="8" fill="#efe9e4" stroke="#8a7671" stroke-width="1.2"/>
+      <rect x="108" y="26" width="88" height="44" rx="8" fill="#efe9e4" stroke="#8a7671" stroke-width="1.2"/>
+      <rect x="201" y="26" width="88" height="44" rx="8" fill="#efe9e4" stroke="#8a7671" stroke-width="1.2"/>
+      <rect x="294" y="26" width="88" height="44" rx="8" fill="#efe9e4" stroke="#8a7671" stroke-width="1.2"/>
+      <rect x="387" y="26" width="88" height="44" rx="8" fill="#fff" stroke="#b9a99f" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <rect x="480" y="26" width="88" height="44" rx="8" fill="#fff" stroke="#b9a99f" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <rect x="573" y="26" width="88" height="44" rx="8" fill="#fff" stroke="#b9a99f" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <rect x="666" y="26" width="88" height="44" rx="8" fill="#fff" stroke="#b9a99f" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <text x="59" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">183 ads</text>
+      <text x="59" y="58" text-anchor="middle" font-size="9.5" fill="#645452">$32.77 a lead</text>
+      <text x="152" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">booking exists</text>
+      <text x="152" y="58" text-anchor="middle" font-size="9.5" fill="#645452">behind a wall</text>
+      <text x="245" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">reminders exist</text>
+      <text x="245" y="58" text-anchor="middle" font-size="9.5" fill="#645452">no times</text>
+      <text x="338" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">11% convert</text>
+      <text x="338" y="58" text-anchor="middle" font-size="9.5" fill="#645452">no day staging</text>
+      <text x="431" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">nothing runs</text>
+      <text x="431" y="58" text-anchor="middle" font-size="9.5" fill="#645452">after joining</text>
+      <text x="524" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">no milestones</text>
+      <text x="524" y="58" text-anchor="middle" font-size="9.5" fill="#645452">no visit data</text>
+      <text x="617" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">1,134 packs</text>
+      <text x="617" y="58" text-anchor="middle" font-size="9.5" fill="#645452">no expiry journey</text>
+      <text x="710" y="44" text-anchor="middle" font-size="9.5" font-weight="600" fill="#2b2626">195 churned</text>
+      <text x="710" y="58" text-anchor="middle" font-size="9.5" fill="#645452">no winback</text>
+      <rect x="15"  y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="108" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="201" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="294" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="387" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="480" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="573" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <rect x="666" y="84" width="88" height="30" rx="7" class="dboxsage"/>
+      <text x="59"  y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">focused ads</text>
+      <text x="152" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">pay first flow</text>
+      <text x="245" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">timed comms</text>
+      <text x="338" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">day by day arc</text>
+      <text x="431" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">60 day journey</text>
+      <text x="524" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">milestones</text>
+      <text x="617" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">expiry journeys</text>
+      <text x="710" y="103" text-anchor="middle" font-size="9.5" font-weight="700" fill="#f6f2ef">saves + winback</text>
+      <rect x="15" y="130" width="739" height="26" rx="8" fill="#2b2626"/>
+      <text x="384" y="147" text-anchor="middle" font-size="10.5" font-weight="700" fill="#f6f2ef">Measured end to end: one weekly dashboard reads every stage</text>
+      <text class="dnote" x="15" y="180">Solid border = partly covered today, where your asks live. Dashed = does not exist today.</text>
+      <text class="dnote" x="15" y="196">Sage = run by the system, at every location, from the same template.</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ 03 THE PROCESS ============ -->
+<section id="process">
+  <div class="kicker">03 | The Process</div>
+  <h2>Five phases. One operating system.</h2>
+  <p class="lead">The same architecture we run across the STRONG Pilates network: infrastructure first, then the AI, then the journey library that works every stage of the lifecycle map above.</p>
+
+  <div class="diagram">
+    <div class="t">The system once the build lands</div>
+    <div class="s">One bridge, everything connected. The AI, the journeys and the ads finally see the same truth Core sees.</div>
+    <svg viewBox="0 0 760 330" role="img" aria-label="Future system diagram">
+      <rect class="dbox" x="20" y="40" width="150" height="60" rx="8"/>
+      <text class="dt" x="95" y="66" text-anchor="middle">Meta Ads</text>
+      <text class="dts" x="95" y="82" text-anchor="middle">Kaizen managed</text>
+      <rect class="dbox" x="20" y="220" width="150" height="60" rx="8"/>
+      <text class="dt" x="95" y="246" text-anchor="middle">Booking flow</text>
+      <text class="dts" x="95" y="262" text-anchor="middle">pay first, no account wall</text>
+      <rect class="dbox" x="300" y="40" width="150" height="60" rx="8"/>
+      <text class="dt" x="375" y="66" text-anchor="middle">Hapana Core</text>
+      <text class="dts" x="375" y="82" text-anchor="middle">source of truth</text>
+      <rect class="dboxsage" x="290" y="140" width="170" height="54" rx="10"/>
+      <text class="dtw" x="375" y="163" text-anchor="middle">The Bridge</text>
+      <text class="dtws" x="375" y="179" text-anchor="middle">Public API, sync every 15 min</text>
+      <rect class="dbox" x="300" y="240" width="150" height="60" rx="8"/>
+      <text class="dt" x="375" y="266" text-anchor="middle">Grow CRM</text>
+      <text class="dts" x="375" y="282" text-anchor="middle">fields, journeys, one inbox</text>
+      <rect class="dboxink" x="580" y="140" width="160" height="60" rx="10"/>
+      <text class="dtw" x="660" y="164" text-anchor="middle">ONE8T AI host</text>
+      <text class="dtws" x="660" y="180" text-anchor="middle">one brain, all locations</text>
+      <rect class="dbox" x="580" y="252" width="160" height="52" rx="8"/>
+      <text class="dt" x="660" y="274" text-anchor="middle">Weekly dashboard</text>
+      <text class="dts" x="660" y="290" text-anchor="middle">members, revenue, CPL</text>
+      <path class="darrow" d="M95,100 L95,220"/>
+      <path class="darrow" d="M170,250 L296,268"/>
+      <path class="darrowsage" d="M375,100 L375,140"/>
+      <path class="darrowsage" d="M375,194 L375,240"/>
+      <text class="dnotesage" x="390" y="122">bookings + times + packages</text>
+      <text class="dnotesage" x="390" y="226">4 live fields per contact</text>
+      <path class="darrowsage" d="M460,167 L580,167"/>
+      <text class="dnotesage" x="470" y="158">live schedule</text>
+      <path class="darrow" d="M580,185 L450,262"/>
+      <text class="dnote" x="492" y="252">writes to the same inbox</text>
+      <path class="darrow" d="M450,282 L580,282"/>
+      <path class="darrowsage" d="M300,70 L170,70"/>
+      <text class="dnotesage" x="182" y="58">exclusions, nightly</text>
+      <text class="dnote" x="20" y="322">Solid sage = the connections this plan builds. Everything lands in accounts ONE8T owns.</text>
+    </svg>
+  </div>
+
+  <div class="tblwrap">
+  <table>
+    <tr><th>Phase</th><th>Overview</th><th>Replaces</th></tr>
+    <tr><td><b>1. Foundation</b></td><td>The bridge reads Core through the Public API and gives Grow the session data it has never had. Timed communications go live. The book and pay flow removes the account wall.</td><td>The wait for Hapana's V2</td></tr>
+    <tr><td><b>2. AI host</b></td><td>One agent for the brand, running inside your inbox, booking off the live schedule, corrected by your team in plain English the same day.</td><td>HireBob / SalesApe</td></tr>
+    <tr><td><b>3. Lifecycle library</b></td><td>Nine journeys covering every stage from intro decision to winback, cloned from patterns running at fleet scale and fitted to ONE8T's products. The full breakdown is in section 04.</td><td>The gaps nobody owns today</td></tr>
+    <tr><td><b>4. Growth engine</b></td><td>Ad account rebuilt to a focused structure with true exclusions, creatives produced from your raw footage, landing pages aligned to the booking flow, one weekly dashboard.</td><td>The marketing agency</td></tr>
+    <tr><td><b>5. Template</b></td><td>Everything above captured as the ONE8T template with central controls, so each new location inherits the full system on day one.</td><td>Starting from zero at location 3</td></tr>
+  </table>
+  </div>
+
+  <div class="diagram">
+    <div class="t">Timeline and your critical path</div>
+    <div class="s">What we deliver each week, and the only things we need from your side.</div>
+    <svg viewBox="0 0 760 276" role="img" aria-label="Timeline diagram">
+      <line x1="120" y1="20" x2="120" y2="262" stroke="rgba(43,38,38,.15)"/>
+      <line x1="275" y1="20" x2="275" y2="262" stroke="rgba(43,38,38,.15)"/>
+      <line x1="430" y1="20" x2="430" y2="262" stroke="rgba(43,38,38,.15)"/>
+      <line x1="585" y1="20" x2="585" y2="262" stroke="rgba(43,38,38,.15)"/>
+      <text class="dt" x="197" y="34" text-anchor="middle">Week 1</text>
+      <text class="dt" x="352" y="34" text-anchor="middle">Week 2</text>
+      <text class="dt" x="507" y="34" text-anchor="middle">Weeks 3 to 4</text>
+      <text class="dt" x="672" y="34" text-anchor="middle">Ongoing</text>
+      <text class="dts" x="20" y="70">Bridge</text>
+      <rect x="130" y="56" width="290" height="20" rx="10" fill="#4f6151"/>
+      <text class="dtws" x="150" y="70">build, then live at Marda Loop</text>
+      <text class="dts" x="20" y="106">Booking flow</text>
+      <rect x="130" y="92" width="140" height="20" rx="10" fill="#a8b2a1"/>
+      <text x="150" y="106" font-size="10" font-weight="600" fill="#2b2626">mockup</text>
+      <rect x="440" y="92" width="290" height="20" rx="10" fill="#4f6151"/>
+      <text class="dtws" x="460" y="106">build and ship on your domain</text>
+      <text class="dts" x="20" y="142">AI host</text>
+      <rect x="285" y="128" width="140" height="20" rx="10" fill="#a8b2a1"/>
+      <text x="305" y="142" font-size="10" font-weight="600" fill="#2b2626">brain built</text>
+      <rect x="440" y="128" width="290" height="20" rx="10" fill="#4f6151"/>
+      <text class="dtws" x="460" y="142">side by side, cutover on your word</text>
+      <text class="dts" x="20" y="178">Journeys</text>
+      <rect x="285" y="164" width="445" height="20" rx="10" fill="#4f6151"/>
+      <text class="dtws" x="305" y="178">intro arc and onboarding first, full library by week 6</text>
+      <text class="dts" x="20" y="214">Ads</text>
+      <rect x="130" y="200" width="600" height="20" rx="10" fill="#4f6151"/>
+      <text class="dtws" x="150" y="214">restructure, exclusions, creatives, then always on</text>
+      <text class="dts" x="20" y="250">From you</text>
+      <rect x="130" y="236" width="140" height="20" rx="10" fill="#efe9e4" stroke="#645452" stroke-width="1"/>
+      <text x="138" y="250" font-size="9.5" font-weight="600" fill="#2b2626">approve reminder copy</text>
+      <rect x="285" y="236" width="140" height="20" rx="10" fill="#efe9e4" stroke="#645452" stroke-width="1"/>
+      <text x="293" y="250" font-size="9.5" font-weight="600" fill="#2b2626">review journeys + AI</text>
+      <rect x="440" y="236" width="140" height="20" rx="10" fill="#efe9e4" stroke="#645452" stroke-width="1"/>
+      <text x="448" y="250" font-size="9.5" font-weight="600" fill="#2b2626">go / no go on cutover</text>
+      <rect x="595" y="236" width="135" height="20" rx="10" fill="#efe9e4" stroke="#645452" stroke-width="1"/>
+      <text x="603" y="250" font-size="9.5" font-weight="600" fill="#2b2626">15 min weekly</text>
+    </svg>
+  </div>
+  <p class="small">Access is already largely in place from the audit: Grow, both ad accounts and Core were connected on 13 to 14 July. Nothing on your critical path takes more than 30 minutes in any week.</p>
+</section>
+
+<!-- ============ 04 THE BREAKDOWN ============ -->
+<section id="breakdown">
+  <div class="kicker">04 | The Breakdown</div>
+  <h2>How each phase is actually built.</h2>
+
+  <div class="phase">
+    <div class="ph">Phase 1 | The Core to Grow bridge</div>
+    <h3>Give Grow the four fields Core never sends.</h3>
+    <div class="quote">
+      <p>"When somebody books an intro, say tomorrow at 2pm, Core does not push what time that is. So I can't send out a text reminder of what time the freaking session is. Did you fix that?"</p>
+      <div class="who">Skye, on our call, 6 July</div>
+    </div>
+    <ol>
+      <li><b>Read.</b> The Hapana Public API (the same interface Core's own apps use) exposes each client's future bookings. The bridge polls it every 15 minutes during studio hours, with a full reconciliation sync nightly. No dependence on Hapana's roadmap, no V2 wait.</li>
+      <li><b>Write.</b> Four plain custom fields appear on every Grow contact: <b>Next Session Date</b>, <b>Next Session Time</b>, <b>Last Visit</b>, <b>Active Package</b>. Your team sees them on the contact card like any other field.</li>
+      <li><b>Trigger.</b> Journeys key off those fields: confirmation with the real time, a reminder the evening before, a nudge the morning of the session, and a follow up if they miss. If someone reschedules, the next poll updates the fields and every pending message moves with them automatically. You approve every message before anything sends.</li>
+    </ol>
+    <div class="diagram">
+      <div class="t">Phase 1 data flow</div>
+      <svg viewBox="0 0 760 208" role="img" aria-label="Phase 1 data flow">
+        <rect class="dbox" x="15" y="30" width="150" height="58" rx="8"/>
+        <text class="dt" x="90" y="55" text-anchor="middle">Core</text>
+        <text class="dts" x="90" y="71" text-anchor="middle">bookings + times</text>
+        <rect class="dboxsage" x="215" y="30" width="150" height="58" rx="10"/>
+        <text class="dtw" x="290" y="55" text-anchor="middle">Bridge</text>
+        <text class="dtws" x="290" y="71" text-anchor="middle">every 15 min</text>
+        <rect class="dbox" x="415" y="30" width="160" height="58" rx="8"/>
+        <text class="dt" x="495" y="49" text-anchor="middle">Grow contact fields</text>
+        <text class="dts" x="495" y="65" text-anchor="middle">Next Session Date / Time</text>
+        <text class="dts" x="495" y="79" text-anchor="middle">Last Visit / Active Package</text>
+        <path class="darrowsage" d="M165,59 L215,59"/>
+        <path class="darrowsage" d="M365,59 L415,59"/>
+        <path class="darrowsage" d="M575,59 L625,59"/>
+        <rect x="625" y="18" width="122" height="82" rx="12" fill="#efe9e4" stroke="#4f6151" stroke-width="1.4"/>
+        <text x="637" y="40" font-size="10.5" font-weight="700" fill="#2b2626">SMS, tomorrow 6pm:</text>
+        <text x="637" y="58" font-size="10" fill="#645452">"Your ONE8T suite is</text>
+        <text x="637" y="72" font-size="10" fill="#645452">booked for 2:00pm</text>
+        <text x="637" y="86" font-size="10" fill="#645452">tomorrow. Arrive 1:30."</text>
+        <text class="dnote" x="15" y="130">The same fields feed the AI (Phase 2), the closeout journeys (Phase 3), and the ads exclusion sync.</text>
+        <rect class="dboxwarn" x="15" y="148" width="732" height="44" rx="8"/>
+        <text x="30" y="168" font-size="11" font-weight="700" fill="#2b2626">Today's version of that message: "Please arrive 30 mins before your scheduled session time."</text>
+        <text x="30" y="184" font-size="10.5" fill="#645452">Your live confirmation SMS. It cannot name the time, because nothing in Grow knows it.</text>
+      </svg>
+    </div>
+    <h3>The book and pay flow</h3>
+    <div class="diagram">
+      <svg viewBox="0 0 760 116" role="img" aria-label="Booking flow steps">
+        <rect class="dbox" x="15" y="22" width="160" height="54" rx="8"/>
+        <text class="dt" x="95" y="45" text-anchor="middle">1. Pick a session</text>
+        <text class="dts" x="95" y="61" text-anchor="middle">live availability, via the API</text>
+        <rect class="dbox" x="215" y="22" width="160" height="54" rx="8"/>
+        <text class="dt" x="295" y="45" text-anchor="middle">2. Details + card</text>
+        <text class="dts" x="295" y="61" text-anchor="middle">name, email, phone, pay</text>
+        <rect class="dboxsage" x="415" y="22" width="160" height="54" rx="10"/>
+        <text class="dtw" x="495" y="45" text-anchor="middle">3. API does the rest</text>
+        <text class="dtws" x="495" y="61" text-anchor="middle">account + booking created</text>
+        <rect class="dbox" x="615" y="22" width="130" height="54" rx="8"/>
+        <text class="dt" x="680" y="45" text-anchor="middle">4. Confirmed</text>
+        <text class="dts" x="680" y="61" text-anchor="middle">with the real time</text>
+        <path class="darrow" d="M175,49 L215,49"/>
+        <path class="darrow" d="M375,49 L415,49"/>
+        <path class="darrow" d="M575,49 L615,49"/>
+        <text class="dnote" x="15" y="104">No account wall. The password step disappears from the lead's path; the account still exists in Core, created by the API.</text>
+      </svg>
+    </div>
+    <p class="small">This is the one custom build in the plan. Design mockup in week 1, live in weeks 3 to 4, on your domain. The same pattern runs on the STRONG Pilates network, which is where the bridge design comes from.</p>
+  </div>
+
+  <div class="phase">
+    <div class="ph">Phase 2 | The AI host</div>
+    <h3>One brain, connected, corrected by you.</h3>
+    <div class="diagram">
+      <div class="t">The agent's structure</div>
+      <svg viewBox="0 0 760 268" role="img" aria-label="AI architecture">
+        <rect class="dboxink" x="270" y="18" width="220" height="58" rx="10"/>
+        <text class="dtw" x="380" y="42" text-anchor="middle">ONE8T brand brain</text>
+        <text class="dtws" x="380" y="58" text-anchor="middle">framework, offers, policies, voice</text>
+        <rect class="dbox" x="60" y="112" width="180" height="50" rx="8"/>
+        <text class="dt" x="150" y="133" text-anchor="middle">Marda Loop folder</text>
+        <text class="dts" x="150" y="149" text-anchor="middle">hours, open studio flows</text>
+        <rect class="dbox" x="290" y="112" width="180" height="50" rx="8"/>
+        <text class="dt" x="380" y="133" text-anchor="middle">West Springs folder</text>
+        <text class="dts" x="380" y="149" text-anchor="middle">presale stage, founder offers</text>
+        <rect class="dboxwarn" x="520" y="112" width="180" height="50" rx="8"/>
+        <text class="dt" x="610" y="133" text-anchor="middle">Location 3 folder</text>
+        <text class="dts" x="610" y="149" text-anchor="middle">inherits everything, day one</text>
+        <path class="darrow" d="M330,76 L160,112"/>
+        <path class="darrow" d="M380,76 L380,112"/>
+        <path class="darrow" d="M430,76 L600,112"/>
+        <rect class="dboxsage" x="60" y="196" width="200" height="52" rx="10"/>
+        <text class="dtw" x="160" y="217" text-anchor="middle">Live schedule + inbox</text>
+        <text class="dtws" x="160" y="233" text-anchor="middle">books real sessions in Grow</text>
+        <rect class="dboxsage" x="290" y="196" width="200" height="52" rx="10"/>
+        <text class="dtw" x="390" y="217" text-anchor="middle">Same day corrections</text>
+        <text class="dtws" x="390" y="233" text-anchor="middle">plain English, logged in the repo</text>
+        <rect class="dboxsage" x="520" y="196" width="200" height="52" rx="10"/>
+        <text class="dtw" x="620" y="217" text-anchor="middle">85 imported rules</text>
+        <text class="dtws" x="620" y="233" text-anchor="middle">six months of training kept</text>
+        <path class="darrow" d="M160,162 L160,196"/>
+        <path class="darrow" d="M380,162 L390,196"/>
+        <path class="darrow" d="M610,162 L620,196"/>
+      </svg>
+    </div>
+    <ul>
+      <li><b>Connected, not sealed.</b> It reads live availability through the bridge, writes every conversation into your Grow inbox, and sees purchase state, so it stops selling the moment someone buys.</li>
+      <li><b>Correction mechanic, with a clock.</b> It says something wrong at 9pm; your team messages the correction in plain English; it is applied the same day and logged, timestamped, in a repository you can read. No ticket queue. Compare: 85 corrections to date, each one waiting on the vendor's staff.</li>
+      <li><b>Your knowledge survives the switch.</b> The Nervous System Training document and every rule those 85 tickets taught (pricing, PLUS ONE handling, promo eligibility, escalation triggers) import as the day one rulebook.</li>
+    </ul>
+    <div class="tblwrap">
+    <table>
+      <tr><th>Guardrail</th><th>Rule</th></tr>
+      <tr><td>Channels</td><td>One channel per touch. No email plus SMS double sends.</td></tr>
+      <tr><td>Hard stops</td><td>Stops on purchase. Stops on a clear no. Both are system rules, not habits.</td></tr>
+      <tr><td>Account data</td><td>Never guesses balances or credits; directs to the app or the studio.</td></tr>
+      <tr><td>Pre opening</td><td>Never confirms sessions at an unopened location; offers the reservation path or Marda Loop.</td></tr>
+      <tr><td>Escalation</td><td>Call requests, repeated booking failures and complaints notify a human immediately.</td></tr>
+    </table>
+    </div>
+    <p><b>Target behaviour, one exchange:</b></p>
+    <div class="quote">
+      <p>Lead: "Can I move my Thursday session?"<br>Host: "You're booked Thursday 2:00pm at Marda Loop. Nearest open suites are Thursday 4:30pm or Friday 9:00am. Want me to move you to either?"</p>
+      <div class="who">Grounded in live schedule data. Today's system cannot see any of those times.</div>
+    </div>
+    <p class="small">Cutover: the new host runs side by side in week 3 while the current system keeps working. It takes over when you say so, and cancelling the old vendor is your lever to pull, on your timing.</p>
+  </div>
+
+  <div class="phase">
+    <div class="ph">Phase 3 | The lifecycle library</div>
+    <h3>The journeys between first visit and year two.</h3>
+    <p>This is the architecture we operate across the STRONG Pilates network: an intro lifecycle staged by day, a 60 day member journey, attendance milestones, absence recovery, birthday touches, monthly campaign pushes, presale machinery. Below is that same architecture fitted to ONE8T's product ladder: the $40 and $60 intros, 3 for $99, session packs, Base, Starter, Elevate and Peak memberships, PLUS ONE guests.</p>
+    <div class="tblwrap">
+    <table>
+      <tr><th>Journey</th><th>Fires when</th><th>What it does</th><th>At Marda Loop today</th></tr>
+      <tr><td><b>Intro decision arc</b></td><td>An intro is booked</td><td>Time aware touches from booking to decision day: real time confirmations, day counters, the right nudge on the right day, a human handoff if it stalls.</td><td>Partial. Journeys exist but are blind to time and day.</td></tr>
+      <tr><td><b>Member onboarding</b></td><td>First membership payment</td><td>The first 60 days: welcome, habit building cadence, check ins, an early win moment.</td><td>Missing.</td></tr>
+      <tr><td><b>Attendance milestones</b></td><td>10th, 25th, 50th, 100th session</td><td>Celebrate the milestone, ask for the review at the high point, nudge the upgrade at the right moment.</td><td>Missing. A review ask exists but is not tied to visits.</td></tr>
+      <tr><td><b>Absence recovery</b></td><td>7, 14, 21 days without a visit</td><td>Escalating win back, with a human task at day 21.</td><td>Partial. Tag based, with no visit data behind it.</td></tr>
+      <tr><td><b>Pack expiry and repurchase</b></td><td>Last session used, or pack expires</td><td>A repurchase journey before the habit breaks.</td><td>Missing. 1,134 packs have already run out.</td></tr>
+      <tr><td><b>Payment recovery</b></td><td>A payment fails</td><td>Retry, card update link, a human task if it persists.</td><td>Missing. 14 open failures right now.</td></tr>
+      <tr><td><b>Save and winback</b></td><td>Cancellation intent, then 30, 60, 90 days after churn</td><td>A save sequence first, then structured winback offers.</td><td>Missing. 195 churned, with reasons on file for 82% of them.</td></tr>
+      <tr><td><b>Birthday and moments</b></td><td>The date</td><td>A personal touch from the studio, not a coupon blast.</td><td>Missing.</td></tr>
+      <tr><td><b>Campaign cadence</b></td><td>Monthly calendar</td><td>The mass texts you send by hand become planned pushes: offer, audience, exclusions, measurement.</td><td>Manual today.</td></tr>
+    </table>
+    </div>
+    <p class="small">Status comes from the read of your 46 automations. "Partial" means a version exists but cannot see session times, visits or day counts until the bridge (Phase 1) feeds it. Every journey ships with copy for your approval, and every journey is part of the template that location 3 inherits.</p>
+  </div>
+
+  <div class="phase">
+    <div class="ph">Phase 4 | The growth engine</div>
+    <h3>Fewer ads, true exclusions, the whole journey measured.</h3>
+    <div class="diagram">
+      <div class="t">Ad account restructure</div>
+      <svg viewBox="0 0 760 180" role="img" aria-label="Ads restructure">
+        <text class="dt" x="15" y="28">Today</text>
+        <g fill="#b9a99f">
+          <rect x="15" y="42" width="30" height="16" rx="3"/><rect x="50" y="42" width="30" height="16" rx="3"/><rect x="85" y="42" width="30" height="16" rx="3"/><rect x="120" y="42" width="30" height="16" rx="3"/><rect x="155" y="42" width="30" height="16" rx="3"/><rect x="190" y="42" width="30" height="16" rx="3"/><rect x="225" y="42" width="30" height="16" rx="3"/><rect x="260" y="42" width="30" height="16" rx="3"/>
+          <rect x="15" y="64" width="30" height="16" rx="3"/><rect x="50" y="64" width="30" height="16" rx="3"/><rect x="85" y="64" width="30" height="16" rx="3"/><rect x="120" y="64" width="30" height="16" rx="3"/><rect x="155" y="64" width="30" height="16" rx="3"/><rect x="190" y="64" width="30" height="16" rx="3"/><rect x="225" y="64" width="30" height="16" rx="3"/><rect x="260" y="64" width="30" height="16" rx="3"/>
+          <rect x="15" y="86" width="30" height="16" rx="3"/><rect x="50" y="86" width="30" height="16" rx="3"/><rect x="85" y="86" width="30" height="16" rx="3"/><rect x="120" y="86" width="30" height="16" rx="3"/><rect x="155" y="86" width="30" height="16" rx="3"/><rect x="190" y="86" width="30" height="16" rx="3"/>
+        </g>
+        <text class="dts" x="15" y="122">183 ads, 35 ad sets, budget spread too thin to exit learning</text>
+        <text class="dts" x="15" y="138">Exclusion list: about 20 people</text>
+        <path class="darrowsage" d="M330,80 L420,80"/>
+        <text class="dt" x="440" y="28">Under this plan</text>
+        <g fill="#4f6151">
+          <rect x="440" y="42" width="64" height="26" rx="5"/><rect x="512" y="42" width="64" height="26" rx="5"/><rect x="584" y="42" width="64" height="26" rx="5"/>
+          <rect x="440" y="76" width="64" height="26" rx="5"/><rect x="512" y="76" width="64" height="26" rx="5"/>
+        </g>
+        <text class="dts" x="440" y="122">A handful of focused ads per objective,</text>
+        <text class="dts" x="440" y="136">each with enough budget to exit learning</text>
+        <text class="dnotesage" x="440" y="152">Exclusions synced nightly from Core's real list</text>
+        <text class="dnote" x="15" y="168">Creative production included: you supply raw photos and video, we produce statics, carousels and cutdowns.</text>
+      </svg>
+    </div>
+    <ul>
+      <li><b>Landing pages align to the booking flow,</b> so the ad's promise and the checkout are one motion instead of a handoff between vendors.</li>
+      <li><b>West Springs presale runs as a campaign:</b> founder tiers, waitlist nurture, opening countdown, the machinery we run for new studio openings through the year.</li>
+      <li><b>One weekly dashboard</b> covers members, net movement, intros, revenue and cost per lead. Section 05 shows a live example.</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <div class="ph">Phase 5 | The template</div>
+    <h3>Build once. Switch on per location.</h3>
+    <div class="diagram">
+      <svg viewBox="0 0 760 168" role="img" aria-label="Template instantiation">
+        <rect class="dboxink" x="15" y="44" width="220" height="76" rx="10"/>
+        <text class="dtw" x="125" y="72" text-anchor="middle">The ONE8T Template</text>
+        <text class="dtws" x="125" y="90" text-anchor="middle">bridge, fields, journeys, emails,</text>
+        <text class="dtws" x="125" y="104" text-anchor="middle">AI brain, booking flow, dashboard</text>
+        <rect class="dbox" x="330" y="16" width="180" height="44" rx="8"/>
+        <text class="dt" x="420" y="35" text-anchor="middle">Marda Loop</text>
+        <text class="dts" x="420" y="50" text-anchor="middle">live now, first to inherit</text>
+        <rect class="dbox" x="330" y="72" width="180" height="44" rx="8"/>
+        <text class="dt" x="420" y="91" text-anchor="middle">West Springs</text>
+        <text class="dts" x="420" y="106" text-anchor="middle">presale playbook included</text>
+        <rect class="dboxwarn" x="330" y="128" width="180" height="34" rx="8"/>
+        <text class="dt" x="420" y="149" text-anchor="middle">Locations 3 and 4</text>
+        <rect class="dboxwarn" x="560" y="72" width="185" height="44" rx="8"/>
+        <text class="dt" x="652" y="91" text-anchor="middle">Franchisees</text>
+        <text class="dts" x="652" y="106" text-anchor="middle">"here's the vendor, here's the cost"</text>
+        <path class="darrowsage" d="M235,66 L330,38"/>
+        <path class="darrowsage" d="M235,84 L330,94"/>
+        <path class="darrowsage" d="M235,104 L330,145"/>
+        <path class="darrow" d="M510,94 L560,94"/>
+      </svg>
+    </div>
+    <ul>
+      <li><b>Instantiating a location takes days, not months:</b> journeys, emails, fields and the AI's location folder are cloned from the template; the dashboard gets a new row.</li>
+      <li><b>HQ keeps control structurally.</b> Offers, journeys and pricing live in the central template. Locations get local hours and tone, not their own rules.</li>
+      <li><b>The franchisee pitch becomes one line:</b> the investment table in section 06 is written so you can hand it over as is.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 05 BENCHMARKS ============ -->
+<section id="bench">
+  <div class="kicker">05 | Benchmarks</div>
+  <h2>Our Canada portfolio, same window, same definitions.</h2>
+  <p class="lead">Five STRONG Pilates studios we manage in Canada. Names hidden because these are clients' books; every figure pulled live on 13 and 14 July 2026.</p>
+
+  <div class="defs"><b>Definitions, so the comparison is apples to apples:</b> a lead is Meta's lead event (form or pixel), counted identically in your column and ours, window 13 June to 12 July 2026. Note your internal lead counts can read higher than Meta's because a two person booking is two people to you and one lead event to Meta. Intro to member = intro purchasers who later hold a recurring membership, from each studio's member system.</div>
+
+  <div class="tblwrap">
+  <table>
+    <tr><th>Studio</th><th>Active members</th><th>CPL, 30d</th><th>Revenue, 30d</th><th>Intro to member</th><th>Note</th></tr>
+    <tr><td><b>Canada Studio A</b></td><td>260</td><td>$6.11</td><td>$83,983</td><td>31.8%</td><td>Six straight weeks of net member growth, churn 4.2%</td></tr>
+    <tr><td><b>Canada Studio B</b></td><td>150</td><td><b>$5.52</b></td><td>$38,473</td><td><b>41.7%</b></td><td>Newest of the five, open about 4 months</td></tr>
+    <tr><td><b>Canada Studio C</b></td><td>243</td><td>$9.07</td><td><b>$99,520</b></td><td>35.4%</td><td>Biggest revenue month in the portfolio</td></tr>
+    <tr><td colspan="6"><b>Portfolio average CPL across all five: $10.23</b> ($7,875 spend, 770 leads). The average is printed, not just the best studios.</td></tr>
+  </table>
+  </div>
+
+  <div class="chart">
+    <div class="t">Cost per lead, last 30 days, CAD</div>
+    <svg viewBox="0 0 560 182" role="img" aria-label="Cost per lead comparison">
+      <text x="0" y="26" font-size="12" font-weight="600" fill="#2b2626">ONE8T Marda Loop today</text>
+      <rect x="0" y="34" width="393" height="24" rx="4" fill="#b9a99f"/>
+      <text x="401" y="51" font-size="12.5" font-weight="800" fill="#2b2626">$32.77</text>
+      <text x="0" y="82" font-size="12" font-weight="600" fill="#2b2626">Canada portfolio average, all five studios</text>
+      <rect x="0" y="90" width="123" height="24" rx="4" fill="#4f6151"/>
+      <text x="131" y="107" font-size="12.5" font-weight="800" fill="#2b2626">$10.23</text>
+      <text x="0" y="138" font-size="12" font-weight="600" fill="#2b2626">Most efficient studio</text>
+      <rect x="0" y="146" width="66" height="24" rx="4" fill="#4f6151" opacity="0.75"/>
+      <text x="74" y="163" font-size="12.5" font-weight="800" fill="#2b2626">$5.52</text>
+    </svg>
+  </div>
+
+  <div class="chart">
+    <div class="t">Intro purchasers who become members</div>
+    <div class="s">Your true rate (Finding 1) against two of the portfolio's.</div>
+    <svg viewBox="0 0 560 182" role="img" aria-label="Conversion comparison">
+      <text x="0" y="26" font-size="12" font-weight="600" fill="#2b2626">ONE8T Marda Loop, all time</text>
+      <rect x="0" y="34" width="103" height="24" rx="4" fill="#b9a99f"/>
+      <text x="111" y="51" font-size="12.5" font-weight="800" fill="#2b2626">~11%</text>
+      <text x="0" y="82" font-size="12" font-weight="600" fill="#2b2626">Canada Studio A</text>
+      <rect x="0" y="90" width="297" height="24" rx="4" fill="#4f6151" opacity="0.85"/>
+      <text x="305" y="107" font-size="12.5" font-weight="800" fill="#2b2626">31.8%</text>
+      <text x="0" y="138" font-size="12" font-weight="600" fill="#2b2626">Canada Studio B</text>
+      <rect x="0" y="146" width="389" height="24" rx="4" fill="#4f6151"/>
+      <text x="397" y="163" font-size="12.5" font-weight="800" fill="#2b2626">41.7%</text>
+    </svg>
+  </div>
+
+  <div class="phase" style="padding:22px 26px;">
+    <h3 style="margin-top:0;">The weekly view, from a live client dashboard</h3>
+    <p class="small" style="margin-bottom:12px;">Canada Studio A, last 30 days, name hidden. This is the report that replaces Dash View and the Excel exports.</p>
+    <div class="stats" style="margin:0 0 12px;">
+      <div class="stat"><div class="v">260</div><div class="l">Active members</div></div>
+      <div class="stat"><div class="v">+10</div><div class="l">Net growth, 30d</div></div>
+      <div class="stat"><div class="v">4.2%</div><div class="l">Churn, 30d</div></div>
+      <div class="stat"><div class="v">$83,983</div><div class="l">Revenue, 30d</div></div>
+      <div class="stat"><div class="v">$6.11</div><div class="l">CPL, 30d</div></div>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:14px;">
+      <svg viewBox="0 0 150 44" style="width:150px;flex:0 0 150px;" role="img" aria-label="Weekly net growth sparkline">
+        <rect x="2" y="8" width="18" height="32" rx="2" fill="#4f6151"/><rect x="27" y="8" width="18" height="32" rx="2" fill="#4f6151"/><rect x="52" y="32" width="18" height="8" rx="2" fill="#4f6151"/><rect x="77" y="24" width="18" height="16" rx="2" fill="#4f6151"/><rect x="102" y="16" width="18" height="24" rx="2" fill="#4f6151"/><rect x="127" y="32" width="18" height="8" rx="2" fill="#4f6151"/>
+      </svg>
+      <p class="small" style="margin:0;">Weekly net member movement, six positive weeks in a row.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 INVESTMENT ============ -->
+<section id="invest">
+  <div class="kicker">06 | Investment</div>
+  <h2>Priced to be handed to a franchisee.</h2>
+
+  <div class="tblwrap">
+  <table>
+    <tr><th>Item</th><th>AUD</th><th>Approx CAD</th><th>Covers</th></tr>
+    <tr><td><b>The ONE8T Template</b><br><span class="small">one time, for the business</span></td><td><b>$5,000</b></td><td>about $4,900</td><td>Core to Grow bridge, timed communications, book and pay flow, the full nine journey lifecycle library with its email and SMS templates, the AI brain, the dashboard. Built once, owned by the business, inherited by every location.</td></tr>
+    <tr><td><b>Full Service</b><br><span class="small">per studio, per week</span></td><td><b>$400</b></td><td>about $390<br><span class="small">roughly $1,700/month</span></td><td>Meta ads management with creative production included, Grow and the lifecycle journeys, the AI host, monthly campaign cadence and presale execution, the weekly dashboard.</td></tr>
+    <tr><td><b>Grow + AI</b><br><span class="small">per studio, per month</span></td><td><b>$200</b></td><td>about $195</td><td>Automations, the AI host, dashboard and support, for any location where ads are handled elsewhere.</td></tr>
+  </table>
+  </div>
+  <p class="small">CAD figures converted at 0.98 (ECB reference rate, 13 July 2026), indicative only; billing is in AUD. Ad spend is separate, stays in your Meta account, and is paid to Meta directly.</p>
+
+  <h3>Against today's stack</h3>
+  <div class="tblwrap">
+  <table>
+    <tr><th>Line</th><th>Today</th><th>Under this plan</th></tr>
+    <tr><td>AI</td><td>About $1,600 CAD a month for two locations, sealed, vendor corrected</td><td>Included, connected, corrected by your team</td></tr>
+    <tr><td>Automations and CRM work</td><td>Ad hoc, quoted per change</td><td>Included</td></tr>
+    <tr><td>Creative production</td><td>Separate ($5,000 in photoshoots so far, edits extra)</td><td>Included; you supply raw footage only</td></tr>
+    <tr><td>Reporting</td><td>Dash View plus manual Excel</td><td>Weekly dashboard included</td></tr>
+    <tr><td>Agency management fee</td><td>Your current fee, on top of ad spend</td><td>Replaced by the $400/week, all of the above inside it</td></tr>
+  </table>
+  </div>
+  <p class="small">No charge until the template work begins.</p>
+</section>
+
+<!-- ============ 07 OWNERSHIP ============ -->
+<section id="own">
+  <div class="kicker">07 | Ownership and Continuity</div>
+  <h2>Built in your accounts. Documented as it's built.</h2>
+  <ul style="margin:0 0 14px 20px;max-width:74ch;">
+    <li style="margin-bottom:9px;"><b>What is yours outright.</b> The fields, journeys, emails, funnels and pipelines are built inside ONE8T's own Grow accounts. If we ever part ways, they stay, and they keep working.</li>
+    <li style="margin-bottom:9px;"><b>What is a service.</b> The bridge and the AI run on our infrastructure, and their full configuration, instructions and change history live in a shared repository your team can read at any time. Nothing about your own system is hidden from you. Today, the equivalent knowledge sits inside your vendor's back office.</li>
+    <li style="margin-bottom:9px;"><b>How we work.</b> You deal with me directly; my team executes; I review before anything reaches you or a lead. This is the same operating model I run across the STRONG Pilates network of 150 studios.</li>
+    <li style="margin-bottom:9px;"><b>Continuity.</b> A business partner, a trained team, and documentation deep enough that the work survives any one person. This document was produced from a one day, fully documented read of your estate; every build gets the same treatment.</li>
+  </ul>
+</section>
+
+<!-- ============ 08 NEXT ============ -->
+<section id="next">
+  <div class="kicker">08 | Next Step</div>
+  <h2>One decision starts it.</h2>
+  <p>Reply with the tier for each location (full service, or Grow and AI only). Access is already in place from the audit, so week one starts the same day: the ad account restructure begins, and the booking flow mockup and reminder copy land with you for approval.</p>
+  <div class="sig">
+    <div class="name">Mario Paguio</div>
+    <div class="role">Kaizen Collective | mario@kaizencollective.com.au</div>
+  </div>
+</section>
+
+<footer>
+  <hr class="hr">
+  Private document prepared for Skye Kaiss, ONE8T Wellness, Calgary. ONE8T figures were read directly from ONE8T's own Hapana Core, Grow, Meta and SalesApe accounts on 13 and 14 July 2026, read only, using access Skye granted. Portfolio figures come from Kaizen managed accounts over the same window and are anonymized. Performance data is CAD; pricing is AUD, with indicative CAD conversions as marked. Nothing here is a projection unless labeled as one.
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var links=document.querySelectorAll('nav a');
+  var ids=['intro','problem','process','breakdown','bench','invest','own','next'];
+  var secs=ids.map(function(i){return document.getElementById(i);});
+  function spy(){
+    var y=window.scrollY+150, on=0;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=y)on=i;}
+    links.forEach(function(a,i){a.classList.toggle('on',i===on);});
+  }
+  window.addEventListener('scroll',spy,{passive:true});
+  spy();
+})();
+</script>
+</body>
+</html>
